@@ -1,0 +1,7 @@
+tqdm
+numpy
+networkx
+psutil
+matplotlib
+pymongo[srv]
+pika

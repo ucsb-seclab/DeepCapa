@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+    rabbitmq3:
+        container_name: "rabbitmq"
+        image: rabbitmq:3-management-alpine
+        environment:
+            - RABBITMQ_DEFAULT_USER=myuser
+            - RABBITMQ_DEFAULT_PASS=mypassword
+        ports:
+            # AMQP protocol port
+            - '5672:5672'
+            # HTTP management UI
+            - '15672:15672'
+
+    mongodb_container:
+        container_name: "mongodb"
+        image: mongo:4.4.6
+        #restart: always
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: mitrepredict
+            MONGO_INITDB_ROOT_PASSWORD: mitrepredict_mongo_db
+        ports:
+            - 27017:27017
+        volumes:
+                - ./db_data:/data/db
