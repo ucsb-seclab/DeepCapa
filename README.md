@@ -50,11 +50,15 @@ The `neural_network` directory houses scripts necessary for:
 If you use DEEPCAPA in your research or projects, please cite it as follows:
 
 ```bibtex
-@inproceedings{vasan2024deepcapa,
-  title        = {{DeepCapa: Identifying Malicious Capability in Windows Malware}},
-  author       = {Vasan, Saastha and Aghakhani, Hojjat and Ortolani, Stefano and Vasilenko, Roman and Grishchenko, Ilya and Kruegel, Christopher and Vigna, Giovanni},
-  year         = {2024},
-  booktitle    = {{Annual Computer Security Applications Conference (ACSAC)}},
-  organization = {IEEE}
-}
+@INPROCEEDINGS{10917772,
+  author={Vasan, Saastha and Aghakhani, Hojjat and Ortolani, Stefano and Vasilenko, Roman and Grishchenko, Ilya and Kruegel, Christopher and Vigna, Giovanni},
+  booktitle={2024 Annual Computer Security Applications Conference (ACSAC)}, 
+  title={DEEPCAPA: Identifying Malicious Capabilities in Windows Malware}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={826-842},
+  keywords={Reverse engineering;Switches;Manuals;Machine learning;Artificial neural networks;Probabilistic logic;Malware;Computer security;malware analysis;deep learning},
+  doi={10.1109/ACSAC63791.2024.00072}}
+
 ```
